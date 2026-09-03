@@ -870,31 +870,31 @@ if st.session_state.get('show_stats', False) and st.session_state.session_histor
     with col3:
         st.metric("Sessions Today", len([s for s in st.session_state.session_history if s['date'].split()[0] == datetime.now().strftime("%Y-%m-%d")]))
 
-# Help section
-with st.expander("❓ How to Use"):
-    st.markdown("""
-    ### Getting Started
-    1. **Configure Settings**: Use the sidebar to select operations, difficulty, and number of questions
-    2. **Set Timer**: Choose time per question (0 = no timer)
-    3. **Start Session**: Click "🚀 Start Session" to begin
-    4. **Solve Problems**: Enter your answer and click "✓ Submit"
-    5. **Review**: Click "→ Next Question" to move forward
-    6. **Results**: After completing all questions, view your final results and review all problems
+# # Help section
+# with st.expander("❓ How to Use"):
+#     st.markdown("""
+#     ### Getting Started
+#     1. **Configure Settings**: Use the sidebar to select operations, difficulty, and number of questions
+#     2. **Set Timer**: Choose time per question (0 = no timer)
+#     3. **Start Session**: Click "🚀 Start Session" to begin
+#     4. **Solve Problems**: Enter your answer and click "✓ Submit"
+#     5. **Review**: Click "→ Next Question" to move forward
+#     6. **Results**: After completing all questions, view your final results and review all problems
     
-    ### Features
-    - **Multiple Operations**: Addition, Subtraction, Multiplication, Division
-    - **Per-Question Timer**: Set time limit for each question (0 = no timer)
-    - **Difficulty Levels**: Choose based on your skill level (1-5 digits)
-    - **Performance Tracking**: View accuracy and statistics over time
-    - **Problem Review**: See correct answers for all problems after session
-    - **Auto-Skip**: Questions auto-skip when time runs out
+#     ### Features
+#     - **Multiple Operations**: Addition, Subtraction, Multiplication, Division
+#     - **Per-Question Timer**: Set time limit for each question (0 = no timer)
+#     - **Difficulty Levels**: Choose based on your skill level (1-5 digits)
+#     - **Performance Tracking**: View accuracy and statistics over time
+#     - **Problem Review**: See correct answers for all problems after session
+#     - **Auto-Skip**: Questions auto-skip when time runs out
     
-    ### Tips for Better Results
-    - Start with easier levels and progress gradually
-    - Practice regularly for consistent improvement
-    - Try timed sessions to improve speed
-    - Focus on accuracy first, then speed
-    """)
+#     ### Tips for Better Results
+#     - Start with easier levels and progress gradually
+#     - Practice regularly for consistent improvement
+#     - Try timed sessions to improve speed
+#     - Focus on accuracy first, then speed
+#     """)
 
 # Footer
 st.markdown("---")
